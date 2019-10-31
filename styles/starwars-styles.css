@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+h1 {
+    color: pink; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 15px;
+    background-color: teal;
+    visibility: visible;
+}
