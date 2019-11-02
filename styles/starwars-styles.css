@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 2rem;
     width: 100%;
     max-width: 1280px;
@@ -14,6 +14,7 @@ h1 {
 header {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 button {
@@ -23,4 +24,20 @@ button {
     border-radius: 15px;
     background-color: teal;
     visibility: visible;
+}
+
+h3, p {
+    margin: 0px; 
+}
+
+img {
+    width: 120px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid plum;
+    padding: 8px;
 }
