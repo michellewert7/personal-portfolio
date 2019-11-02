@@ -20,27 +20,6 @@ let mainHeader = document.querySelector('header')
     mainArea.appendChild(filmDiv)
 }); */
 
-const maleCharacters = people.filter (person => person.gender === 'male')
-const femaleCharacters = people.filter (person => person.gender === 'female')
-
-let maleButton = document.createElement('button')
-maleButton.textContent = "Male Characters"
-maleButton.addEventListener('click', event => {
-    maleCharacters.forEach(elt =>{
-        console.log(elt)
-        //elt.setAttribute("style", "visibility: visible;")
-    })
-    femaleCharacters.forEach(elt=> {
-        elt.setAttribute("style", "visibility: hidden;")
-    })
-})
-let femaleButton = document.createElement('button')
-femaleButton.textContent = "Female Characters"
-femaleButton.addEventListener('click', event => {
-
-})
-mainHeader.appendChild(maleButton)
-mainHeader.appendChild(femaleButton)
 
 people.forEach(function(person){
     let personDiv = document.createElement ('div')
@@ -71,4 +50,29 @@ function getCharNumber(charURL) {
     }
 }
 
- 
+const maleCharacters = people.filter (person => person.gender === 'male')
+const femaleCharacters = people.filter (person => person.gender === 'female')
+const otherCharacter = people.filter (person => person.gender !== 'female' && person.gender !== 'male')
+const allDivs = Array.from(mainArea.querySelectorAll('div'))
+
+let maleButton = document.createElement('button')
+maleButton.textContent = "Male Characters"
+maleButton.addEventListener('click', event => {
+    maleCharacters.forEach(elt =>{
+        let matchedDiv = allDivs.filter(element => {
+            return element.firstChild.textContent === elt.name
+        }) 
+        console.log(matchedDiv)
+        matchedDiv[0].setAttribute("style","display: none;")
+    }) 
+    femaleCharacters.forEach(elt=> {
+        //elt.setAttribute("style", "visibility: hidden;")
+    })
+})
+let femaleButton = document.createElement('button')
+femaleButton.textContent = "Female Characters"
+femaleButton.addEventListener('click', event => {
+
+})
+mainHeader.appendChild(maleButton)
+mainHeader.appendChild(femaleButton)
