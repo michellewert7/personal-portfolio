@@ -13,18 +13,18 @@ nav {
     font-family: monospace;
 }
 
+#navlist {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
 #navlist a {
     display: block;
     font-size: 1.75rem;
     padding: 1.25rem;
     text-decoration: none;
     color: #f0f0f0;
-}
-
-#navlist {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
 }
 
 #navlist a:hover {
