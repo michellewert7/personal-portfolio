@@ -58,21 +58,22 @@ const allDivs = Array.from(mainArea.querySelectorAll('div'))
 let maleButton = document.createElement('button')
 maleButton.textContent = "Male Characters"
 maleButton.addEventListener('click', event => {
-    maleCharacters.forEach(elt =>{
+    femaleCharacters.forEach(elt =>{
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
         }) 
-        console.log(matchedDiv)
         matchedDiv[0].setAttribute("style","display: none;")
-    }) 
-    femaleCharacters.forEach(elt=> {
-        //elt.setAttribute("style", "visibility: hidden;")
     })
 })
 let femaleButton = document.createElement('button')
 femaleButton.textContent = "Female Characters"
 femaleButton.addEventListener('click', event => {
-
+    femaleCharacters.forEach(elt=> {
+        let matchedDiv = allDivs.filter(element => {
+            return element.firstChild.textContent === elt.name
+    })
+    matchedDiv[0].setAttribute("style","display: revert;")
+    })
 })
 mainHeader.appendChild(maleButton)
 mainHeader.appendChild(femaleButton)
