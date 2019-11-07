@@ -68,7 +68,7 @@ maleButton.addEventListener('click', event => {
 let femaleButton = document.createElement('button')
 femaleButton.textContent = "Female Characters"
 femaleButton.addEventListener('click', event => {
-    maleCharacters.forEach(elt=> {
+    femaleCharacters.forEach(elt=> {
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
     })
