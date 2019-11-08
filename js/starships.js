@@ -10,11 +10,12 @@ starships.forEach(ship => {
     shipName.textContent = ship.name
 
     let shipNum = getCharNumber(ship.url)
-
-    shipPic.src = 'https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg'
+    console.log(shipNum)
+    let url = 'https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg'
+    shipPic.src = url
 
     shipDiv.appendChild(shipName)
-    ship.Div.appendChild(shipPic)
+    shipDiv.appendChild(shipPic)
     contentArea.appendChild(shipDiv)
 })
 
