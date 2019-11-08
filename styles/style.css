@@ -38,7 +38,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: antiquewhite;
-    font-size: 52px;
+    font-size: 40px;
     font-family: monospace;
     background-image: linear-gradient(teal,lightsalmon);
 }
@@ -63,6 +63,7 @@ h1 {
 #projects {
     background-color: lightsalmon;
     font-family: monospace;
+    font-size: 18px;
     padding-bottom: 60px;
     background-image: linear-gradient(lightsalmon, lightgoldenrodyellow);
 }
@@ -73,7 +74,7 @@ h1 {
 }
 
 .project-title {
-    font-size: 24px;
+    font-size: 18px;
     font-family: monospace;
     color: lightgoldenrodyellow;
     margin-left: 25px;
