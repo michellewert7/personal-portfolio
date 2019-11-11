@@ -20,9 +20,13 @@ let mainHeader = document.querySelector('header')
     mainArea.appendChild(filmDiv)
 }); */
 
-const maleCharacters = people.filter (person => person.gender === 'male')
+const justNames = people.map (person => {
+    return { name: person.name, foo: 'bar', config: [{style: 'something'}, {foo:'bar'}]}
+})
 
-maleCharacters.forEach(function(person){
+console.log(justNames)
+
+people.forEach(function(person){
     let personDiv = document.createElement ('div')
     let name = document.createElement('h3')
     let gender = document.createElement('p')
