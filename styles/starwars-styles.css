@@ -7,10 +7,7 @@
     margin: 0 auto;
     margin-bottom: 6rem;
 }
-#buttons {
-    display: flex;
-    justify-content: center;
-}
+
 h1 {
     color: pink; 
 }
@@ -18,7 +15,22 @@ h1 {
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin: 20px; 
+    font-size: 32px;
+}
+
+/* div #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid plum;
+    padding: 8px;
+} */
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 button {
@@ -30,6 +42,22 @@ button {
     visibility: visible;
 }
 
+#all {
+    margin: 4px;
+}
+
+#female {
+    margin: 4px;
+}
+
+#male {
+    margin: 4px;
+}
+
+#other {
+    margin: 4px;
+}
+
 h3, p {
     margin: 0px; 
 }
@@ -38,10 +66,18 @@ img {
     width: 120px;
 }
 
-div {
+/* div {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid plum;
     padding: 8px;
+} */
+
+.charDivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid plum;
+    padding: 8px; 
 }

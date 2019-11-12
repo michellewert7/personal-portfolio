@@ -40,7 +40,7 @@ const allCharacters = people
 cardBuilder(allCharacters)
 
 const allBtn = document.getElementById('all')
-allBtn.addEventListener( 'click',() => {
+allBtn.addEventListener('click', () => {
     while (mainArea.firstChild) {
         mainArea.removeChild(mainArea.firstChild);
     }
@@ -48,7 +48,7 @@ allBtn.addEventListener( 'click',() => {
     console.log('test')
 })
 const femBtn = document.getElementById('female')
-femBtn.addEventListener( 'click',() => {
+femBtn.addEventListener('click', () => {
     while (mainArea.firstChild) {
         mainArea.removeChild(mainArea.firstChild);
     }
@@ -56,7 +56,7 @@ femBtn.addEventListener( 'click',() => {
     console.log('test')
 })
 const maleBtn = document.getElementById('male')
-maleBtn.addEventListener( 'click',() => {
+maleBtn.addEventListener('click', () => {
     while (mainArea.firstChild) {
         mainArea.removeChild(mainArea.firstChild);
     }
@@ -64,13 +64,14 @@ maleBtn.addEventListener( 'click',() => {
     console.log('test')
 })
 const otherBtn = document.getElementById('other')
-otherBtn.addEventListener( 'click',() => {
+otherBtn.addEventListener('click', () => {
     while (mainArea.firstChild) {
         mainArea.removeChild(mainArea.firstChild);
     }
     cardBuilder(otherCharacters)
     console.log('test')
 })
+
 // const otherBtn = document.getElementById('all')
 // otherBtn.addEventListener( 'click',() => {
 //     cardBuilder(otherCharacters)
@@ -84,28 +85,28 @@ otherBtn.addEventListener( 'click',() => {
 // }
 
 console.log("click")
-function cardBuilder (arr){
-    
+function cardBuilder(arr) {
+
 
     arr.forEach(function (person) {
         let personDiv = document.createElement('div')
         let name = document.createElement('h3')
         let gender = document.createElement('p')
         let pic = document.createElement('img')
-    
+
         personDiv.setAttribute('class', 'charDivs')
         pic.setAttribute('class', 'picDivs')
-    
+
         let charNum = getCharNumber(person.url)
-    
+
         name.textContent = person.name
         gender.textContent = person.gender
         pic.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
-    
+
         personDiv.appendChild(name)
         personDiv.appendChild(gender)
         personDiv.appendChild(pic)
-    
+
         mainArea.appendChild(personDiv)
     })
 }
