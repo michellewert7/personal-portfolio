@@ -36,8 +36,8 @@ function populateDOM(single_pokemon) {
 
     pic.src = '../images/$(pokeNum).png'
 
-    pokeDiv.appendChild(name)
     pokeDiv.appendChild(pic)
+    pokeDiv.appendChild(name)
 
     mainArea.appendChild(pokeDiv)
 }
