@@ -3,7 +3,9 @@ import { people } from '../assets/people.js'
 
 console.log('Hey, I am JavaScript on your page!')
 
-let mainArea = document.querySelector('main')
+let mainArea = document.getElementById("cards")
+let buttonArea = document.getElementById('buttons')
+
 //let mainHeader = document.querySelector('header')
 
 /* films.forEach(function(film){
@@ -28,29 +30,85 @@ console.log(justNames)
 
 const maleCharacters = people.filter(person => person.gender === 'male')
 const femaleCharacters = people.filter(person => person.gender === 'female')
-const otherCharacter = people.filter(person => person.gender !== 'female' && person.gender !== 'male')
+const otherCharacters = people.filter(person => person.gender !== 'female' && person.gender !== 'male')
+const allCharacters = people
 
-maleCharacters.forEach(function (person) {
-    let personDiv = document.createElement('div')
-    let name = document.createElement('h3')
-    let gender = document.createElement('p')
-    let pic = document.createElement('img')
+//cardBuilder(maleCharacters)
+//cardBuilder(femaleCharacters)
 
-    personDiv.setAttribute('class', 'charDivs')
-    pic.setAttribute('class', 'picDivs')
+//cardBuilder(otherCharacters)
+cardBuilder(allCharacters)
 
-    let charNum = getCharNumber(person.url)
-
-    name.textContent = person.name
-    gender.textContent = person.gender
-    pic.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
-
-    personDiv.appendChild(name)
-    personDiv.appendChild(gender)
-    personDiv.appendChild(pic)
-
-    mainArea.appendChild(personDiv)
+const allBtn = document.getElementById('all')
+allBtn.addEventListener( 'click',() => {
+    while (mainArea.firstChild) {
+        mainArea.removeChild(mainArea.firstChild);
+    }
+    cardBuilder(allCharacters)
+    console.log('test')
 })
+const femBtn = document.getElementById('female')
+femBtn.addEventListener( 'click',() => {
+    while (mainArea.firstChild) {
+        mainArea.removeChild(mainArea.firstChild);
+    }
+    cardBuilder(femaleCharacters)
+    console.log('test')
+})
+const maleBtn = document.getElementById('male')
+maleBtn.addEventListener( 'click',() => {
+    while (mainArea.firstChild) {
+        mainArea.removeChild(mainArea.firstChild);
+    }
+    cardBuilder(maleCharacters)
+    console.log('test')
+})
+const otherBtn = document.getElementById('other')
+otherBtn.addEventListener( 'click',() => {
+    while (mainArea.firstChild) {
+        mainArea.removeChild(mainArea.firstChild);
+    }
+    cardBuilder(otherCharacters)
+    console.log('test')
+})
+// const otherBtn = document.getElementById('all')
+// otherBtn.addEventListener( 'click',() => {
+//     cardBuilder(otherCharacters)
+//     console.log('test')
+// })
+
+
+// while (mainArea.firstChild) {
+//     mainArea.removeChild(mainArea.firstChild);
+//     console.log('delete')
+// }
+
+console.log("click")
+function cardBuilder (arr){
+    
+
+    arr.forEach(function (person) {
+        let personDiv = document.createElement('div')
+        let name = document.createElement('h3')
+        let gender = document.createElement('p')
+        let pic = document.createElement('img')
+    
+        personDiv.setAttribute('class', 'charDivs')
+        pic.setAttribute('class', 'picDivs')
+    
+        let charNum = getCharNumber(person.url)
+    
+        name.textContent = person.name
+        gender.textContent = person.gender
+        pic.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
+    
+        personDiv.appendChild(name)
+        personDiv.appendChild(gender)
+        personDiv.appendChild(pic)
+    
+        mainArea.appendChild(personDiv)
+    })
+}
 
 function getCharNumber(charURL) {
     let end = charURL.lastIndexOf('/')
@@ -62,10 +120,11 @@ function getCharNumber(charURL) {
     }
 }
 
+
 //const femaleCharacters = people.filter (person => person.gender === 'female')
 //const otherCharacter = people.filter (person => person.gender !== 'female' && person.gender !== 'male')
 
-const allDivs = Array.from(mainArea.querySelectorAll('div'))
+/* const allDivs = Array.from(buttonArea.querySelectorAll('div'))
 
 const mainHeader = document.querySelector('header')
 let maleButton = document.createElement('button')
@@ -97,4 +156,4 @@ femaleButton.addEventListener('click', () => {
 mainHeader.appendChild(maleButton)
 mainHeader.appendChild(femaleButton)
 
-console.log(otherCharacters)
+console.log(otherCharacters) */
