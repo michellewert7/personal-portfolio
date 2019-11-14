@@ -11,7 +11,7 @@ starships.forEach(ship => {
 
     let shipNum = getCharNumber(ship.url)
     console.log(shipNum)
-    let url = 'https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg'
+    let url = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     shipPic.src = url
 
     shipDiv.appendChild(shipName)
