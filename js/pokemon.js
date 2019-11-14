@@ -14,11 +14,14 @@ const theData = getAPIData('https://pokeapi.co/api/v2/pokemon/')
             getAPIData(pokemon.url)
                 .then(pokedata => {
                     populateDOM(pokedata)
+                    //console.log(pokedata.id)
+                    let pokeId = getPokeNumber(pokedata.id)
+                    //console.log(pokeId)
                 })
         }
     })
 
-console.log(theData)
+//console.log(theData)
 
 let mainArea = document.querySelector('main')
 
@@ -31,10 +34,13 @@ function populateDOM(single_pokemon) {
     pic.setAttribute('class', 'picDivs')
 
     let pokeNum = getPokeNumber(single_pokemon.id)
+    console.log('id '+pokeNum)
 
     name.textContent = single_pokemon.name
 
-    pic.src = '../images/$(pokeNum).png'
+    // pic.src = `../images/${pokeNum}.png`
+
+    pic.src = `../images/${pokeNum}.png`
 
     pokeDiv.appendChild(pic)
     pokeDiv.appendChild(name)
@@ -43,8 +49,8 @@ function populateDOM(single_pokemon) {
 }
 
 function getPokeNumber(id) {
-    if (id < 10) return '00${id}'
+    if (id < 10) return `00${id}`
     if (id > 9 && id < 100) {
-        return '0${id}'
+        return `0${id}`
     } else return id
 }
