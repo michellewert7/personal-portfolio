@@ -5,7 +5,7 @@ async function getAPIData(url) {
         return data
     } catch (error) {
         console.error(error)
-    }
+    } 
 }
 
 const theData = getAPIData('https://pokeapi.co/api/v2/pokemon/')
@@ -54,3 +54,8 @@ function getPokeNumber(id) {
         return `0${id}`
     } else return id
 }
+
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});
