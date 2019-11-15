@@ -27,7 +27,7 @@ let mainArea = document.querySelector('main')
 
 function populateDOM(single_pokemon) {
     let pokeDiv = document.createElement('div')
-    let name = document.createElement('h3')
+    let name = document.createElement('h4')
     let pic = document.createElement('img')
 
     pokeDiv.setAttribute('class', 'charDivs')

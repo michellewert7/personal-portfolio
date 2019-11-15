@@ -1,3 +1,37 @@
+body {
+    margin: 0px;
+    background-color: #3D7DCA;
+}
+
+.header {
+    background-color: #FFCB05;
+    padding: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #003A70;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #3D7DCA;
+}
+
+main {
+    background-color: #3D7DCA;
+    margin-top: 2
+}
+
+h4 {
+    font-family: Helvetica;
+    color: #FFCB05;
+}
+
 main {
     display: grid;
     grid-template-rows:    repeat(4, 200px);
@@ -5,6 +39,7 @@ main {
     grid-gap: 2rem;
     max-width: 1280px;
     margin: 0 auto;
+    margin-top: 40px;
     margin-bottom: 6rem;
 }
 
