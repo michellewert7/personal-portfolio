@@ -87,10 +87,10 @@ body { font-family: sans-serif; }
 }
 
 .card__face--front {
-  background: red;
+  background: whitesmoke;
 }
 
 .card__face--back {
-  background: blue;
+  background: black;
   transform: rotateY(180deg);
 }
