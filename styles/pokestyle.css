@@ -87,7 +87,7 @@ body { font-family: sans-serif; }
 }
 
 .card__face--front {
-  background: whitesmoke;
+  /*background: whitesmoke;*/
 }
 
 .card__face--back {
