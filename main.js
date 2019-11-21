@@ -1,3 +1,7 @@
+import { senators } from "./senators.js"
+
+console.log(senators[0].results[0].members)
+
 async function getAPIData(url) {
     try {
         const response = await fetch(url)
@@ -11,8 +15,8 @@ async function getAPIData(url) {
 let allSenators = []
 let simpleSenators = []
 
-const theData = getAPIData('senators.json').then(data => {
-    allSenators = data.result[0].members
+const theData = getAPIData('./senators copy.json').then(data => {
+    allSenators = data.results[0].members
     console.log(allSenators)
     //populateDOM(allSenators)
     simpleSenators = mapSenators(allSenators)
@@ -21,7 +25,7 @@ const theData = getAPIData('senators.json').then(data => {
 })
 
 const republicans = allSenators.filter(senator => senator.party === 'R')
-const democrats = all.Senators.filter(senator => senator.party === 'D')
+const democrats = allSenators.filter(senator => senator.party === 'D')
 
 console.log(republicans, democrats)
 
@@ -34,7 +38,7 @@ function mapSenators(allOfThem) {
             name: `${senator.first_name} ${senator.last_name}`,
             party: senator.party,
             birth_date: senator.date_of_birth,
-            age: _calculateAge(newDate(senator.date_of_birth)),
+            age: _calculateAge(new Date(senator.date_of_birth)),
             gender: senator.gender
         }
     })
@@ -145,7 +149,7 @@ function _calculateAge(birthday) {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-console.log(_calculateAge(new Date('1940-07-03'))
+//console.log(_calculateAge(new Date('1940-07-03'))
 
 
 
