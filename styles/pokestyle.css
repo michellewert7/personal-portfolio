@@ -4,22 +4,25 @@ body {
 }
 
 .header {
-    background-color: #FFCB05;
-    padding: 40px;
+    background-color: white;
+    padding-bottom: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow:10px 10px 2px #005EB5;
+    
 }
 
 h1{
     text-align: center;
     font-size: 60px;
-    color: #003A70;
+    color: black;
     margin: 0px;
 }
 
 h4 {
     font-size: 24px;
+    margin: 0px;
     text-align: center;
-    color: #3D7DCA;
+    color:#3D7DCA;
 }
 
 main {
@@ -40,24 +43,30 @@ main {
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 40px;
+    padding-left: 100px;
     margin-bottom: 6rem;
 }
 
 img {
-    width: 200px;
+    width: 180px;
+    margin-top: 10px
 }
 
 .charDivs {
     text-align: center;
 }
 
-body { font-family: sans-serif; }
+body { 
+  font-family: sans-serif;
+}
 
 .scene {
   width: 200px;
   height: 260px;
-  border: 1px solid #CCC;
+  /* border: 1px solid #CCC; */
   margin: 40px 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
   perspective: 600px;
 }
 
@@ -80,28 +89,49 @@ body { font-family: sans-serif; }
   height: 100%;
   /*line-height: 260px;*/
   /*color: white;*/
-  text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 32px;
   backface-visibility: hidden;
 }
 
 .card__face--front {
-  /*background: whitesmoke;*/
+  background: #003A70;
+  margin: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .card__face--back {
-  background: black;
+  /* background: black; */
   transform: rotateY(180deg);
 }
 
+.card__face--back img {
+  margin: 0px;
+}
+
 p {
-    
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px;
     margin: 0px;
     font-size: 16px; 
     line-height: 10px;
     /* line-height: 0rem; */
     color: white;
+    text-align: center;
+}
+
+.poke_logo {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.picDivs {
+  height: 160px;
+  width: auto;
+  padding-top: 10px;
 }
