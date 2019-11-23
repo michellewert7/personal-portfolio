@@ -82,14 +82,14 @@ function populateDOM(single_pokemon) {
 }
 
 function fillCardBack(pokeBack, data) {
-    let pokeOrder = document.createElement('p')
-    pokeOrder.textContent = data.order
+    // let pokeOrder = document.createElement('p')
+    // pokeOrder.textContent = data.order
     
     let pokePhoto = document.createElement('img')
     pokePhoto.src = "./images/pokemon_cardback.png"
 
     pokeBack.appendChild(pokePhoto)
-    pokeBack.appendChild(pokeOrder)
+    // pokeBack.appendChild(pokeOrder)
 }
 
 function getPokeNumber(id) {
