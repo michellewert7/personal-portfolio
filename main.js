@@ -69,9 +69,6 @@ function getOldestSenator(arrayOfSenators) {
 
 
 
-
-
-
 const container = document.querySelector('.container')
 
 function populateDOM(senatorArray) {
@@ -106,7 +103,7 @@ function populateCardContent(senator) {
     figure.setAttribute('class', 'image is-96x96')
     let figureImage = document.createElement('img')
     if (senator.party === "R") {
-        figureImage.src = `/images/Elephant.png`
+        figureImage.src = `/images/Elefant.png`
     };
     if (senator.party === "D") {
         figureImage.src = `/images/Donkey.png`
