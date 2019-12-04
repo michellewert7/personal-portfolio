@@ -66,7 +66,7 @@ function populateDOM(single_pokemon) {
     pokeFront.appendChild(name)
     name.textContent = `${single_pokemon.name} height: ${single_pokemon.height}`
 
-    pic.src = `../images/${pokeNum}.png`
+    pic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
     pokeFront.appendChild(pic)
     pokeFront.appendChild(name)
 
