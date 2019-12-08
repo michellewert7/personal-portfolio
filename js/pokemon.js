@@ -5,7 +5,20 @@ async function getAPIData(url) {
         return data
     } catch (error) {
         console.error(error)
-    } 
+    }
+}
+
+let pokemonLoaded = 25
+let loadMoreButton = document.querySelector('.loadMore')
+loadMoreButton.addEventListener('click', addPokemon)
+
+function addPokemon() {
+    pokemonLoaded = pokemonLoaded + 1
+    let url = `https://pokeapi.co/api/v2/pokemon/` + pokemonLoaded
+    getAPIData(url)
+        .then(data => {
+            populateDOM(data)
+        })
 }
 
 const theData = getAPIData('https://pokeapi.co/api/v2/pokemon?limit=25')
@@ -64,7 +77,9 @@ function populateDOM(single_pokemon) {
 
     let pokeNum = getPokeNumber(single_pokemon.id)
     pokeFront.appendChild(name)
-    name.textContent = `${single_pokemon.name} height: ${single_pokemon.height}`
+    name.textContent = `${single_pokemon.name}`
+
+    // height: ${single_pokemon.height}
 
     pic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
     pokeFront.appendChild(pic)
@@ -76,7 +91,7 @@ function populateDOM(single_pokemon) {
 
     mainArea.appendChild(pokeScene)
 
-    pokeCard.addEventListener('click', function() {
+    pokeCard.addEventListener('click', function () {
         pokeCard.classList.toggle('is-flipped');
     })
 }
@@ -84,12 +99,38 @@ function populateDOM(single_pokemon) {
 function fillCardBack(pokeBack, data) {
     // let pokeOrder = document.createElement('p')
     // pokeOrder.textContent = data.order
-    
-    let pokePhoto = document.createElement('img')
-    pokePhoto.src = "./images/pokemon_cardback.png"
 
-    pokeBack.appendChild(pokePhoto)
+    // let pokePhoto = document.createElement('img')
+    // pokePhoto.src = "./images/pokemon_cardback.png"
+
+    // pokeBack.appendChild(pokePhoto)
     // pokeBack.appendChild(pokeOrder)
+
+    let idElement = document.createElement('div')
+    idElement.textContent = "id: "+ getPokeNumber(data.id)
+    pokeBack.appendChild(idElement)
+
+    let weight = document.createElement('p')
+    weight.textContent = data.weight
+    pokeBack.appendChild(weight)
+
+    let height = document.createElement('p')
+    height.textContent = data.height
+    pokeBack.appendChild(height)
+
+    let typesDiv = document.createElement('div')
+    let typesTitle = document.createElement('p')
+    typesTitle.textContent = "types:" 
+    typesDiv.appendChild(typesTitle)
+    
+    for (const poketype of data.types) {
+        let type = document.createElement('p')
+        type.setAttribute('class', poketype.type.name)
+        type.textContent = poketype.type.name
+        typesDiv.appendChild(type)
+    }
+    
+    pokeBack.appendChild(typesDiv)
 }
 
 function getPokeNumber(id) {

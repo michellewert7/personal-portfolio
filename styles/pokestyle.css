@@ -102,13 +102,27 @@ body {
   text-align: center;
 }
 
+.card__face--front p {
+  margin: 10px;
+}
+
 .card__face--back {
   /* background: black; */
   transform: rotateY(180deg);
+  background: pink;
+  border-radius: 10px;
 }
-
+/* 
 .card__face--back img {
   margin: 0px;
+} */
+
+.card__face--back div {
+  
+}
+
+.card__face--back p {
+  
 }
 
 p {
@@ -120,6 +134,18 @@ p {
     /* line-height: 0rem; */
     color: white;
     text-align: center;
+}
+
+.poison {
+
+}
+
+.grass {
+
+}
+
+.fire {
+
 }
 
 .poke_logo {
@@ -134,4 +160,12 @@ p {
   height: 160px;
   width: auto;
   padding-top: 10px;
+}
+
+button {
+  display: flex;
+  align-items: left;
+  margin-left: 60px;
+  margin-top: 60px;
+  border-radius: 100%;
 }
