@@ -31,6 +31,13 @@ nav {
     background-color: lightsalmon;
 }
  
+.welcome-image{
+    height: 500px;
+    width: auto;
+    padding: 40px;
+}
+
+
 #welcome-section {
     width: 100%;
     height: 100vh;
@@ -40,6 +47,7 @@ nav {
     background-color: antiquewhite;
     font-size: 24px;
     font-family: monospace;
+    color: lightgoldenrodyellow;
     background-image: linear-gradient(teal,lightsalmon);
 }
 
@@ -62,6 +70,7 @@ h1 {
 
 #projects {
     background-color: lightsalmon;
+    color: lightgoldenrodyellow;
     font-family: monospace;
     font-size: 18px;
     padding-bottom: 60px;
@@ -72,6 +81,10 @@ h1 {
     background: var(--main-gray);
     border-radius: 2px;
 }
+
+.project:hover {
+    opacity: 0.75;
+  }
 
 .project-title {
     font-size: 18px;
@@ -115,6 +128,7 @@ h2 {
 
 #contact {
     background-color: lightgoldenrodyellow;
+    color: teal;
     padding: 40px;
     font-family: monospace;
     padding-left: 85px;

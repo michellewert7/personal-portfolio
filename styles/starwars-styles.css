@@ -8,16 +8,31 @@
     margin-bottom: 6rem;
 }
 
-h1 {
+/* h1 {
     color: pink; 
-}
+} */
 
 header {
     display: flex;
     justify-content: center;
     margin: 20px; 
     font-size: 32px;
+    color: white;
 }
+
+.starwars_logo {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url("stars.jpg");
+    background-color: black;
+    color: white;
+   }
 
 /* div #buttons {
     display: flex;
@@ -29,9 +44,9 @@ header {
 
 #buttons {
     display: flex;
-    justify-content: left;
-    margin-bottom: 20px;
-    margin-left: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* margin-left: 50px; */
 }
 
 button {
@@ -40,11 +55,12 @@ button {
     color: white;
     border-radius: 15px;
     background-color: teal;
+    border-color: teal;
     visibility: visible;
 }
 
-button #starships.ships {
-    
+#starships.ships {
+    margin: 4px;
 }
 
 #all {
@@ -83,6 +99,16 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid plum;
+   
+    border-radius: 10px;
     padding: 8px; 
+    background-color: black;
+}
+
+button:hover {
+    opacity: 0.75;
+  }
+
+div.charDivs {
+    filter: drop-shadow(0 0 0.75rem white);
 }
