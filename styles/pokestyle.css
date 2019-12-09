@@ -1,14 +1,11 @@
 body {
     margin: 0px;
-    background-color: #3D7DCA;
+    background-color: white;
 }
 
 .header {
-    background-color: white;
     padding-bottom: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-shadow:10px 10px 2px #005EB5;
-    
 }
 
 h1{
@@ -20,13 +17,13 @@ h1{
 
 h4 {
     font-size: 24px;
-    margin: 0px;
+    margin-bottom: 10px;
     text-align: center;
     color:#3D7DCA;
 }
 
 main {
-    background-color: #3D7DCA;
+    background-color: white;
     margin-top: 2
 }
 /* 
@@ -95,7 +92,7 @@ body {
 }
 
 .card__face--front {
-  background: #003A70;
+  background: white;
   margin: 0px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -109,7 +106,7 @@ body {
 .card__face--back {
   /* background: black; */
   transform: rotateY(180deg);
-  background: pink;
+  background: #f4f5f4;
   border-radius: 10px;
 }
 /* 
@@ -118,11 +115,16 @@ body {
 } */
 
 .card__face--back div {
-  
+  color: #003A70;
+  text-align: left;
+  margin-left: 8px;
 }
 
 .card__face--back p {
-  
+  text-align: left;
+  padding: 4px;
+  color: #3D7DCA;
+  margin-left: 8px;
 }
 
 p {
@@ -132,20 +134,58 @@ p {
     font-size: 16px; 
     line-height: 10px;
     /* line-height: 0rem; */
-    color: white;
+    color: #003A70;
     text-align: center;
 }
 
-.poison {
-
+p.poison {
+  color: black;
+  margin-left: 12px;
 }
 
-.grass {
-
+p.grass {
+  color: green;
+  margin-left: 12px;
 }
 
-.fire {
+p.fire {
+  color: orangered;
+  margin-left: 12px;
+}
 
+p.bug {
+  color: rgb(160, 146, 34);
+  margin-left: 12px;
+}
+
+p.water {
+  color: aqua;
+  margin-left: 12px;
+}
+
+p.flying {
+  color: blue;
+  margin-left: 12px;
+}
+
+p.normal {
+  color: gray;
+  margin-left: 12px;
+}
+
+p.ground {
+  color: rgb(48, 26, 26);
+  margin-left: 12px;
+}
+
+p.electric {
+  color: rgb(177, 177, 0);
+  margin-left: 12px;
+}
+
+p.fairy {
+  color: pink;
+  margin-left: 12px;
 }
 
 .poke_logo {
@@ -153,7 +193,8 @@ p {
   width: auto;
   display: block;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto;
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 .picDivs {
@@ -163,9 +204,17 @@ p {
 }
 
 button {
-  display: flex;
-  align-items: left;
-  margin-left: 60px;
-  margin-top: 60px;
-  border-radius: 100%;
+  display:block;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  background-color: #fef70d;
+  border-color:#3D7DCA;
+  border-width:10px;
+  filter: drop-shadow(0 0 0.75rem crimson);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #3D7DCA;
+  font-size: 16px;
 }

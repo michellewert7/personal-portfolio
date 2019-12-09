@@ -110,14 +110,18 @@ function fillCardBack(pokeBack, data) {
     idElement.textContent = "id: "+ getPokeNumber(data.id)
     pokeBack.appendChild(idElement)
 
-    let weight = document.createElement('p')
-    weight.textContent = data.weight
-    pokeBack.appendChild(weight)
+    let name = document.createElement('div')
+    name.textContent = data.name
+    pokeBack.appendChild(name)
 
     let height = document.createElement('p')
-    height.textContent = data.height
+    height.textContent = "height: "+ data.height
     pokeBack.appendChild(height)
-
+    
+    let weight = document.createElement('p')
+    weight.textContent = "weight: "+ data.weight
+    pokeBack.appendChild(weight)
+   
     let typesDiv = document.createElement('div')
     let typesTitle = document.createElement('p')
     typesTitle.textContent = "types:" 
