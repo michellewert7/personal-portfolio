@@ -29,8 +29,9 @@ header {
 
 #buttons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 button {
@@ -40,6 +41,10 @@ button {
     border-radius: 15px;
     background-color: teal;
     visibility: visible;
+}
+
+button #starships.ships {
+    
 }
 
 #all {
