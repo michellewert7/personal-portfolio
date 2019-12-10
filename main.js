@@ -116,11 +116,11 @@ function populateCardContent(senator) {
     titleP.textContent = `${senator.name}`
     let subtitleP = document.createElement('p')
     subtitleP.setAttribute('class', 'subtitle is-6')
-    subtitleP.textContent = `${senator.birth_date} Age: ${senator.age}`
+    subtitleP.textContent = `${senator.birth_date} Age: ${_calculateAge(new Date(senator.birth_date))}`
 
     let contentDiv = document.createElement('div')
     contentDiv.setAttribute('class', 'content')
-    contentDiv.textContent = ``
+    contentDiv.textContent = `Lorem ipsum`
     let contentBreak = document.createElement('br')
     let timeSection = document.createElement('time')
     let newDate = new Date()
