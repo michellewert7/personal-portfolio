@@ -72,8 +72,8 @@ otherBtn.addEventListener('click', () => {
     console.log('test')
 })
 
-const starshipsBtn = 
-starshipBtn.addEventListener('click', '.')
+// const starshipsBtn = 
+// starshipBtn.addEventListener('click', '.')
 
 // const otherBtn = document.getElementById('all')
 // otherBtn.addEventListener( 'click',() => {
