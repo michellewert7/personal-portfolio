@@ -1,5 +1,7 @@
+
 import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
+// import { starships } from '../assets/starships.js'
 
 console.log('Hey, I am JavaScript on your page!')
 
@@ -129,10 +131,10 @@ starshipButton.addEventListener('click', starships)
 
 function starships() {
     let url = `starships.js`
-    getAPIData(url)
-        .then(data => {
-            populateDOM(data)
-        })
+    // getAPIData(url)
+    //     .then(data => {
+    //         populateDOM(data)
+    //     })
 }
 
 
