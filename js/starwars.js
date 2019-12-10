@@ -124,6 +124,17 @@ function getCharNumber(charURL) {
     }
 }
 
+let starshipButton = document.querySelector('.ships')
+starshipButton.addEventListener('click', starships)
+
+function starships() {
+    let url = `starships.js`
+    getAPIData(url)
+        .then(data => {
+            populateDOM(data)
+        })
+}
+
 
 //const femaleCharacters = people.filter (person => person.gender === 'female')
 //const otherCharacter = people.filter (person => person.gender !== 'female' && person.gender !== 'male')
