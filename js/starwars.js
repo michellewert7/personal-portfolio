@@ -1,7 +1,7 @@
 
 import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
-// import { starships } from '../assets/starships.js'
+import { starships } from '../assets/starships.js'
 
 console.log('Hey, I am JavaScript on your page!')
 
@@ -37,62 +37,43 @@ const allCharacters = people
 
 //cardBuilder(maleCharacters)
 //cardBuilder(femaleCharacters)
-
 //cardBuilder(otherCharacters)
 cardBuilder(allCharacters)
 
 const allBtn = document.getElementById('all')
 allBtn.addEventListener('click', () => {
-    while (mainArea.firstChild) {
-        mainArea.removeChild(mainArea.firstChild);
-    }
+    clearCards()
     cardBuilder(allCharacters)
-    console.log('test')
 })
 const femBtn = document.getElementById('female')
 femBtn.addEventListener('click', () => {
-    while (mainArea.firstChild) {
-        mainArea.removeChild(mainArea.firstChild);
-    }
+    clearCards()
     cardBuilder(femaleCharacters)
-    console.log('test')
 })
 const maleBtn = document.getElementById('male')
 maleBtn.addEventListener('click', () => {
-    while (mainArea.firstChild) {
-        mainArea.removeChild(mainArea.firstChild);
-    }
+    clearCards()
     cardBuilder(maleCharacters)
-    console.log('test')
 })
 const otherBtn = document.getElementById('other')
 otherBtn.addEventListener('click', () => {
+    clearCards()
+    cardBuilder(otherCharacters)
+})
+const starshipButton = document.getElementById('starships')
+starshipButton.addEventListener('click', () => {
+    clearCards()
+    starshipCardBuilder(starships)
+})
+
+
+function clearCards() {
     while (mainArea.firstChild) {
         mainArea.removeChild(mainArea.firstChild);
     }
-    cardBuilder(otherCharacters)
-    console.log('test')
-})
+}
 
-// const starshipsBtn = 
-// starshipBtn.addEventListener('click', '.')
-
-// const otherBtn = document.getElementById('all')
-// otherBtn.addEventListener( 'click',() => {
-//     cardBuilder(otherCharacters)
-//     console.log('test')
-// })
-
-
-// while (mainArea.firstChild) {
-//     mainArea.removeChild(mainArea.firstChild);
-//     console.log('delete')
-// }
-
-console.log("click")
 function cardBuilder(arr) {
-
-
     arr.forEach(function (person) {
         let personDiv = document.createElement('div')
         let name = document.createElement('h3')
@@ -102,7 +83,7 @@ function cardBuilder(arr) {
         personDiv.setAttribute('class', 'charDivs')
         pic.setAttribute('class', 'picDivs')
 
-        let charNum = getCharNumber(person.url)
+        let charNum = getAssetNumber(person.url)
 
         name.textContent = person.name
         gender.textContent = person.gender
@@ -116,7 +97,30 @@ function cardBuilder(arr) {
     })
 }
 
-function getCharNumber(charURL) {
+function starshipCardBuilder(ships) {
+    ships.forEach(function (ship) {
+        let shipDiv = document.createElement('div')
+        let name = document.createElement('h3')
+        let starshipClass = document.createElement('p')
+        let pic = document.createElement('img')
+
+        shipDiv.setAttribute('class', 'charDivs')
+        pic.setAttribute('class', 'picDivs')
+
+        let shipNum = getAssetNumber(ship.url)
+
+        name.textContent = ship.name
+        starshipClass.textContent = ship.starship_class
+        pic.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
+
+        shipDiv.appendChild(name)
+        shipDiv.appendChild(starshipClass)
+        shipDiv.appendChild(pic)
+        mainArea.appendChild(shipDiv)
+    })
+}
+
+function getAssetNumber(charURL) {
     let end = charURL.lastIndexOf('/')
     let charID = charURL.substring(end - 2, end)
     if (charID.indexOf('/') !== -1) {
@@ -124,17 +128,6 @@ function getCharNumber(charURL) {
     } else {
         return charID
     }
-}
-
-let starshipButton = document.querySelector('.ships')
-starshipButton.addEventListener('click', starships)
-
-function starships() {
-    let url = `starships.js`
-    // getAPIData(url)
-    //     .then(data => {
-    //         populateDOM(data)
-    //     })
 }
 
 
