@@ -89,7 +89,6 @@ function populateDOM(senatorArray) {
         card.appendChild(populateCardContent(senator))
         container.appendChild(card)
     })
-
 }
 
 function populateCardContent(senator) {
