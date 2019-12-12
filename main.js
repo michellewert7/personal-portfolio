@@ -119,7 +119,7 @@ function populateCardContent(senator) {
 
     let contentDiv = document.createElement('div')
     contentDiv.setAttribute('class', 'content')
-    contentDiv.textContent = `Lorem ipsum`
+    contentDiv.textContent = ``
     let contentBreak = document.createElement('br')
     let timeSection = document.createElement('time')
     let newDate = new Date()

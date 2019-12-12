@@ -105,6 +105,9 @@ body {
 
 .card__face--back {
   /* background: black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transform: rotateY(180deg);
   background: #f4f5f4;
   border-radius: 10px;
@@ -116,15 +119,15 @@ body {
 
 .card__face--back div {
   color: #003A70;
-  text-align: left;
-  margin-left: 8px;
+  text-align: center;
+  /* margin-left: 8px; */
 }
 
 .card__face--back p {
-  text-align: left;
+  text-align: center;
   padding: 4px;
   color: #3D7DCA;
-  margin-left: 8px;
+  /* margin-left: 8px; */
 }
 
 p {
@@ -140,52 +143,52 @@ p {
 
 p.poison {
   color: black;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.grass {
   color: green;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.fire {
   color: orangered;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.bug {
   color: rgb(160, 146, 34);
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.water {
   color: aqua;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.flying {
   color: blue;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.normal {
   color: gray;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.ground {
   color: rgb(48, 26, 26);
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.electric {
   color: rgb(177, 177, 0);
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 p.fairy {
   color: pink;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 .poke_logo {
