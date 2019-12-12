@@ -1,9 +1,16 @@
 # Personal-Portfolio
-## [Personal]
+
+### [Git Hub](github.com/michellewert7)
+### [Personal Porfolio Webpage](michellewert.netlify.com)
+### [Star Wars Project](https://michellewert.netlify.com/starwars.html)
+### [Pokemon Project](https://michellewert.netlify.com/pokemon.html)
+### [Senators Project](https://michellewert.netlify.com/senators.html)
 
 ## Provides examples of Basic JavaScript code including:
 * Proper use of variables with proper scope
-[Name of the Link](link)
+```Java Script
+
+```
 * Good use of conditional logic and value comparison
 ```Java Script
 
