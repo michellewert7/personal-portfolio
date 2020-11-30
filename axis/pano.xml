@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node2" apprev="18007" appversion="6.1.10">
+  <panorama id="node2">
+    <input width="3459" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" levelingpitch="0" height="3459" levelbias="0.400">
+      <level width="3459" height="3459" preload="0" predecode="0"/>
+      <level width="1729" height="1729" preload="0" predecode="0"/>
+      <level width="864" height="864" preload="0" predecode="0"/>
+      <level width="432" height="432" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="-165">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" fovfisheye="360" fovstereographic="270" pan="360" fov="120"/>
+    </view>
+    <userdata author="" tags="Axis Tour HDR Panos" customnodeid="" source="" latitude="40.28212846" description="" info="" title="Axis Luxury Student Living" longitude="-111.72956765" heading="-165" datetime="" copyright="" comment="" nodeid="node2"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" backgroundcolor="0xffffff" enabled="1" borderradius="1" wordwrap="1" backgroundalpha="1" textcolor="0x000000" border="1" height="20" bordercolor="0x000000" textalpha="1" borderalpha="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot tilt="0" id="Point01" skinid="ht_node" url="{node3}" target="$fwd" pan="-53.3087" description="" distance="10.7733" title=""/>
+      <hotspot tilt="-0.16" id="Point02" skinid="ht_node" url="{node4}" target="$fwd" pan="-103.711" description="" distance="16.3293" title=""/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" enabled="1" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" zoomafterinfov="90" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomout="0"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedwheel="0" lockedkeyboard="0" invertcontrol="1" rubberband="0" dblclickfullscreen="0" contextprojections="0" invertwheel="0" speedwheel="1" sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node3">
+    <input width="3537" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" levelingpitch="0" height="3537" levelbias="0.400">
+      <level width="3537" height="3537" preload="0" predecode="0"/>
+      <level width="1768" height="1768" preload="0" predecode="0"/>
+      <level width="884" height="884" preload="0" predecode="0"/>
+      <level width="442" height="442" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="-129">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" fovfisheye="360" fovstereographic="270" pan="360" fov="120"/>
+    </view>
+    <userdata author="" tags="Axis Tour HDR Panos" customnodeid="" source="" latitude="40.28209265" description="" info="" title="" longitude="-111.72968566" heading="-129" datetime="11/22/20 11:50 PM" copyright="" comment="" nodeid="node3"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" backgroundcolor="0xffffff" enabled="1" borderradius="1" wordwrap="1" backgroundalpha="1" textcolor="0x000000" border="1" height="20" bordercolor="0x000000" textalpha="1" borderalpha="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot tilt="2.7" id="Point01" skinid="ht_node" url="{node2}" target="$fwd" pan="-190.109" description="" distance="10.7733" title="Axis Luxury Student Living"/>
+      <hotspot tilt="0" id="Point02" skinid="ht_node" url="{node4}" target="$fwd" pan="-85.04" description="" distance="8.84987" title=""/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" enabled="1" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" zoomafterinfov="90" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomout="0"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedwheel="0" lockedkeyboard="0" invertcontrol="1" rubberband="0" dblclickfullscreen="0" contextprojections="0" invertwheel="0" speedwheel="1" sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node4">
+    <input width="3416" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" levelingpitch="0" height="3416" levelbias="0.400">
+      <level width="3416" height="3416" preload="0" predecode="0"/>
+      <level width="1708" height="1708" preload="0" predecode="0"/>
+      <level width="854" height="854" preload="0" predecode="0"/>
+      <level width="427" height="427" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="134">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" fovfisheye="360" fovstereographic="270" pan="360" fov="120"/>
+    </view>
+    <userdata author="" tags="Axis Tour HDR Panos" customnodeid="" source="" latitude="40.28214994" description="" info="" title="" longitude="-111.72975808" heading="134" datetime="11/22/20 11:55 PM" copyright="" comment="" nodeid="node4"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" backgroundcolor="0xffffff" enabled="1" borderradius="1" wordwrap="1" backgroundalpha="1" textcolor="0x000000" border="1" height="20" bordercolor="0x000000" textalpha="1" borderalpha="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot tilt="1.33" id="Point01" skinid="ht_node" url="{node3}" target="$fwd" pan="-16.58" description="" distance="8.84987" title=""/>
+      <hotspot tilt="0.57" id="Point02" skinid="ht_node" url="{node5}" target="$fwd" pan="101.62" description="" distance="12.3135" title=""/>
+      <hotspot tilt="0" id="Point03" skinid="ht_node" url="{node2}" target="$fwd" pan="35.5893" description="" distance="16.3293" title="Axis Luxury Student Living"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" enabled="1" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" zoomafterinfov="90" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomout="0"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedwheel="0" lockedkeyboard="0" invertcontrol="1" rubberband="0" dblclickfullscreen="0" contextprojections="0" invertwheel="0" speedwheel="1" sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node5">
+    <input width="3406" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" levelingpitch="0" height="3406" levelbias="0.400">
+      <level width="3406" height="3406" preload="0" predecode="0"/>
+      <level width="1703" height="1703" preload="0" predecode="0"/>
+      <level width="851" height="851" preload="0" predecode="0"/>
+      <level width="425" height="425" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="174">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" fovfisheye="360" fovstereographic="270" pan="360" fov="120"/>
+    </view>
+    <userdata author="" tags="Axis Tour HDR Panos" customnodeid="" source="" latitude="40.28225634" description="" info="" title="" longitude="-111.72971785" heading="174" datetime="11/22/20 11:57 PM" copyright="" comment="" nodeid="node5"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" backgroundcolor="0xffffff" enabled="1" borderradius="1" wordwrap="1" backgroundalpha="1" textcolor="0x000000" border="1" height="20" bordercolor="0x000000" textalpha="1" borderalpha="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot tilt="3.11" id="Point01" skinid="ht_node" url="{node4}" target="$fwd" pan="346.82" description="" distance="12.3135" title=""/>
+      <hotspot tilt="0" id="Point02" skinid="ht_node" url="{node6}" target="$fwd" pan="114.334" description="" distance="9.64377" title=""/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" enabled="1" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" zoomafterinfov="90" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomout="0"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedwheel="0" lockedkeyboard="0" invertcontrol="1" rubberband="0" dblclickfullscreen="0" contextprojections="0" invertwheel="0" speedwheel="1" sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node6">
+    <input width="3414" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" levelingpitch="0" height="3414" levelbias="0.400">
+      <level width="3414" height="3414" preload="0" predecode="0"/>
+      <level width="1707" height="1707" preload="0" predecode="0"/>
+      <level width="853" height="853" preload="0" predecode="0"/>
+      <level width="426" height="426" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="208">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" fovfisheye="360" fovstereographic="270" pan="360" fov="120"/>
+    </view>
+    <userdata author="" tags="Axis Tour HDR Panos" customnodeid="" source="" latitude="40.28228192" description="" info="" title="" longitude="-111.72960922" heading="208" datetime="11/23/20 12:01 AM" copyright="" comment="" nodeid="node6"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" backgroundcolor="0xffffff" enabled="1" borderradius="1" wordwrap="1" backgroundalpha="1" textcolor="0x000000" border="1" height="20" bordercolor="0x000000" textalpha="1" borderalpha="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot tilt="1.56" id="Point01" skinid="ht_node" url="{node5}" target="$fwd" pan="279.984" description="" distance="9.64377" title=""/>
+      <hotspot tilt="-0.01" id="Point02" skinid="ht_node" url="{node7}" target="$fwd" pan="212.914" description="" distance="4.73419" title=""/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" enabled="1" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" zoomafterinfov="90" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomout="0"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedwheel="0" lockedkeyboard="0" invertcontrol="1" rubberband="0" dblclickfullscreen="0" contextprojections="0" invertwheel="0" speedwheel="1" sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node7">
+    <input width="3413" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" levelingpitch="0" height="3413" levelbias="0.400">
+      <level width="3413" height="3413" preload="0" predecode="0"/>
+      <level width="1706" height="1706" preload="0" predecode="0"/>
+      <level width="853" height="853" preload="0" predecode="0"/>
+      <level width="426" height="426" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="120">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" fovfisheye="360" fovstereographic="270" pan="360" fov="120"/>
+    </view>
+    <userdata author="" tags="Axis Tour HDR Panos" customnodeid="" source="" latitude="40.28231670" description="" info="" title="" longitude="-111.72964141" heading="120" datetime="11/23/20 12:03 AM" copyright="" comment="" nodeid="node7"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" backgroundcolor="0xffffff" enabled="1" borderradius="1" wordwrap="1" backgroundalpha="1" textcolor="0x000000" border="1" height="20" bordercolor="0x000000" textalpha="1" borderalpha="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot tilt="-0.19" id="Point02" skinid="ht_node" url="{node6}" target="$fwd" pan="-2.66565" description="" distance="4.73419" title=""/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" enabled="1" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" zoomafterinfov="90" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomout="0"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedwheel="0" lockedkeyboard="0" invertcontrol="1" rubberband="0" dblclickfullscreen="0" contextprojections="0" invertwheel="0" speedwheel="1" sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextfullscreen="1"/>
+  </panorama>
+  <masternode>
+    <userdata author="" tags="" customnodeid="" source="" latitude="" description="" info="" title="" longitude="" heading="0" datetime="" copyright="" comment="" nodeid="master"/>
+  </masternode>
+</tour>
