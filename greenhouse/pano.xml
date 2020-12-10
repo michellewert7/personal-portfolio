@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="6.1.10" apprev="18007" start="node1">
+  <panorama id="node1">
+    <input overlap="1" levelbias="0.400" width="3439" levelingpitch="0" height="3439" levelingroll="0" levelbiashidpi="1.000" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="3439" height="3439" preload="0" predecode="0"/>
+      <level width="1719" height="1719" preload="0" predecode="0"/>
+      <level width="859" height="859" preload="0" predecode="0"/>
+      <level width="429" height="429" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="106.121">
+      <start projection="4" tilt="1.15206" fov="70" pan="94.1527"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max fovfisheye="360" tilt="90" fov="120" fovstereographic="270" pan="360" scaletofit="1"/>
+    </view>
+    <userdata longitude="-111.73279971" info="" nodeid="node1" author="" comment="" source="" customnodeid="" title="" description="" datetime="" tags="greenhouse indoor" latitude="40.28870659" heading="106.121" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label textcolor="0x000000" background="1" borderradius="1" borderalpha="1" border="1" textalpha="1" wordwrap="1" width="180" backgroundalpha="1" height="20" bordercolor="0x000000" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle borderalpha="1" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot id="Point01" tilt="0.67" skinid="ht_node" distance="9.20306" title="Move Here" description="" pan="-266.02" target="-10.4/-2.9/70.0" url="{node2}"/>
+      <hotspot id="Point02" tilt="-4.49" skinid="ht_image" title="Calathea Rattlesnake" description="" pan="-103.37" target="" url="images/node1popup.jpg"/>
+    </hotspots>
+    <media/>
+    <transition zoomafterinfov="90" zoomin="0" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomspeed="2" zoomafteroutfov="20" type="crossdissolve" enabled="1"/>
+    <autorotate nodedelay="0.00" speed="0.050" returntohorizon="0.000" noderandom="1" enabled="1" delay="5.00" nodefilter="" startloaded="0" useanimation="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextprojections="0" sensitivity="8" dblclickfullscreen="0" lockedmouse="0" rubberband="0" lockedkeyboard="0" lockedwheel="0" simulatemass="1" speedwheel="1" lockedkeyboardzoom="0" invertcontrol="1" invertwheel="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node2">
+    <input overlap="1" levelbias="0.400" width="3435" levelingpitch="0" height="3435" levelingroll="0" levelbiashidpi="1.000" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="3435" height="3435" preload="0" predecode="0"/>
+      <level width="1717" height="1717" preload="0" predecode="0"/>
+      <level width="858" height="858" preload="0" predecode="0"/>
+      <level width="429" height="429" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="-2.56614">
+      <start projection="4" tilt="2.05841" fov="70" pan="-41.1372"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max fovfisheye="360" tilt="90" fov="120" fovstereographic="270" pan="360" scaletofit="1"/>
+    </view>
+    <userdata longitude="-111.73278362" info="" nodeid="node2" author="" comment="" source="" customnodeid="" title="" description="" datetime="" tags="greenhouse indoor" latitude="40.28878844" heading="-2.56614" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label textcolor="0x000000" background="1" borderradius="1" borderalpha="1" border="1" textalpha="1" wordwrap="1" width="180" backgroundalpha="1" height="20" bordercolor="0x000000" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle borderalpha="1" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot id="Point01" tilt="-0.05" skinid="ht_node" distance="8.96388" title="Move Here" description="" pan="-352.39" target="80.4/1.7/70.0" url="{node3}"/>
+      <hotspot id="Point02" tilt="-0.95" skinid="ht_node" distance="9.20306" title="Move Back" description="" pan="-199.48" target="-81.1/0.9/70.0" url="{node1}"/>
+      <hotspot id="Point03" tilt="-10.2" skinid="ht_image" title="Fiddle Leaf Fig" description="" pan="-104.28" target="" url="images/node2popup.jpg"/>
+    </hotspots>
+    <media/>
+    <transition zoomafterinfov="90" zoomin="0" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomspeed="2" zoomafteroutfov="20" type="crossdissolve" enabled="1"/>
+    <autorotate nodedelay="0.00" speed="0.050" returntohorizon="0.000" noderandom="1" enabled="1" delay="5.00" nodefilter="" startloaded="0" useanimation="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextprojections="0" sensitivity="8" dblclickfullscreen="0" lockedmouse="0" rubberband="0" lockedkeyboard="0" lockedwheel="0" simulatemass="1" speedwheel="1" lockedkeyboardzoom="0" invertcontrol="1" invertwheel="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node3">
+    <input overlap="1" levelbias="0.400" width="3439" levelingpitch="0" height="3439" levelingroll="0" levelbiashidpi="1.000" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="3439" height="3439" preload="0" predecode="0"/>
+      <level width="1719" height="1719" preload="0" predecode="0"/>
+      <level width="859" height="859" preload="0" predecode="0"/>
+      <level width="429" height="429" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="57.2696">
+      <start projection="4" tilt="4.28152" fov="70" pan="63.7757"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max fovfisheye="360" tilt="90" fov="120" fovstereographic="270" pan="360" scaletofit="1"/>
+    </view>
+    <userdata longitude="-111.73284530" info="" nodeid="node3" author="" comment="" source="" customnodeid="" title="" description="" datetime="" tags="greenhouse indoor" latitude="40.28885390" heading="57.2696" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label textcolor="0x000000" background="1" borderradius="1" borderalpha="1" border="1" textalpha="1" wordwrap="1" width="180" backgroundalpha="1" height="20" bordercolor="0x000000" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle borderalpha="1" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot id="Point01" tilt="2.8" skinid="ht_node" distance="13.1955" title="Move Here" description="" pan="-302.82" target="75.2/0.6/70.0" url="{node4}"/>
+      <hotspot id="Point02" tilt="-0.54" skinid="ht_node" distance="8.96388" title="Move Back" description="" pan="-114.52" target="179.3/0.0/70.0" url="{node2}"/>
+      <hotspot id="Point03" tilt="-11.9" skinid="ht_image" title="Croton Petra" description="" pan="-208.79" target="" url="images/node3popup.jpg"/>
+    </hotspots>
+    <media>
+      <sound field="90.000" id="Element01" mode="3" tilt="3.450" tiltsize="10.000" loop="1" level="1.000" pansize="10.000" pan="-30.430" startmutedmobile="0" nodechangekeep="0" ambientlevel="0.100">
+        <source url="media/Wherever You Are Guitar Loop Original.mp3"/>
+      </sound>
+    </media>
+    <transition zoomafterinfov="90" zoomin="0" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomspeed="2" zoomafteroutfov="20" type="crossdissolve" enabled="1"/>
+    <autorotate nodedelay="0.00" speed="0.050" returntohorizon="0.000" noderandom="1" enabled="1" delay="5.00" nodefilter="" startloaded="0" useanimation="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextprojections="0" sensitivity="8" dblclickfullscreen="0" lockedmouse="0" rubberband="0" lockedkeyboard="0" lockedwheel="0" simulatemass="1" speedwheel="1" lockedkeyboardzoom="0" invertcontrol="1" invertwheel="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node4">
+    <input overlap="1" levelbias="0.400" width="3437" levelingpitch="0" height="3437" levelingroll="0" levelbiashidpi="1.000" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="3437" height="3437" preload="0" predecode="0"/>
+      <level width="1718" height="1718" preload="0" predecode="0"/>
+      <level width="859" height="859" preload="0" predecode="0"/>
+      <level width="429" height="429" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="71.9264">
+      <start projection="4" tilt="-0.935265" fov="70" pan="74.2307"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max fovfisheye="360" tilt="90" fov="120" fovstereographic="270" pan="360" scaletofit="1"/>
+    </view>
+    <userdata longitude="-111.73284531" info="" nodeid="node4" author="" comment="" source="" customnodeid="" title="" description="" datetime="12/8/20 5:16 AM" tags="greenhouse indoor" latitude="40.28897257" heading="71.9264" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label textcolor="0x000000" background="1" borderradius="1" borderalpha="1" border="1" textalpha="1" wordwrap="1" width="180" backgroundalpha="1" height="20" bordercolor="0x000000" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle borderalpha="1" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot id="Point01" tilt="0.68" skinid="ht_node" distance="13.1955" title="Move Back" description="" pan="-115.49" target="-127.5/2.0/70.0" url="{node3}"/>
+      <hotspot id="Point02" tilt="-11.57" skinid="ht_image" title="Peperomia" description="" pan="-148.28" target="" url="images/node4popup.jpg"/>
+    </hotspots>
+    <media>
+      <video pansize="10.000" loop="1" width="640" stretch="1.000" tiltsize="10.000" startmutedmobile="0" height="360" tilt="-5.820" level="1.000" nodechangekeep="0" rotz="0.000" field="90.000" fov="12.180" handcursor="0" ambientlevel="0.100" roty="0.000" pan="-192.780" rotx="0.000" clickmode="2" id="Element01" mode="1">
+        <source url="media/The Beginners Guide to Greenhouses.mp4"/>
+      </video>
+    </media>
+    <transition zoomafterinfov="90" zoomin="0" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomspeed="2" zoomafteroutfov="20" type="crossdissolve" enabled="1"/>
+    <autorotate nodedelay="0.00" speed="0.050" returntohorizon="0.000" noderandom="1" enabled="1" delay="5.00" nodefilter="" startloaded="0" useanimation="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextprojections="0" sensitivity="8" dblclickfullscreen="0" lockedmouse="0" rubberband="0" lockedkeyboard="0" lockedwheel="0" simulatemass="1" speedwheel="1" lockedkeyboardzoom="0" invertcontrol="1" invertwheel="0" contextfullscreen="1"/>
+  </panorama>
+  <masternode>
+    <userdata longitude="" info="" nodeid="master" author="" comment="" source="" customnodeid="" title="" description="" datetime="" tags="" latitude="" heading="0" copyright=""/>
+  </masternode>
+</tour>
